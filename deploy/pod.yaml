@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: deployment_purification_automaton
+spec:
+  serviceAccountName: account
+  containers:
+    - name: deployment_purification_automaton
+      image: deployment_purification_automaton
+      imagePullPolicy: Never
