@@ -3,12 +3,13 @@ package main
 import (
 	"context"
 	"flag"
-	"github.com/Infoblox-CTO/deployment_purification_automaton/internal/service"
 	"log"
 	"net/http"
 	"os"
 	"os/signal"
 	"syscall"
+
+	"github.com/Infoblox-CTO/deployment_purification_automaton/internal/service"
 
 	"github.com/Infoblox-CTO/deployment_purification_automaton/internal/db"
 	"github.com/Infoblox-CTO/deployment_purification_automaton/internal/handler"

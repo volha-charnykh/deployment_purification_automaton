@@ -10,6 +10,7 @@ import (
 type Resource struct {
 	Resource      JSONMap
 	Cluster       string
+	ClusterType   string
 	Timestamp     time.Time
 	ResourceType  string
 	ResourceName  string
@@ -23,6 +24,7 @@ type Resource struct {
 type ResourceRequest struct {
 	Application string    `json:"application"`
 	Cluster     string    `json:"cluster"`
+	ClusterType string    `json:"cluster_type"`
 	GitHash     string    `json:"git_hash"`
 	Time        time.Time `json:"time"`
 	Type        string    `json:"type"`

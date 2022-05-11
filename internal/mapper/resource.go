@@ -2,6 +2,7 @@ package mapper
 
 import (
 	"fmt"
+
 	"github.com/Infoblox-CTO/deployment_purification_automaton/internal/messages"
 	"github.com/Infoblox-CTO/deployment_purification_automaton/internal/model"
 )
@@ -19,6 +20,7 @@ func ParseResourceRequest(rr *model.ResourceRequest) ([]model.Resource, error) {
 		resources[i] = model.Resource{
 			Resource:      r,
 			Cluster:       rr.Cluster,
+			ClusterType:   rr.ClusterType,
 			Timestamp:     rr.Time,
 			ResourceType:  kind,
 			ResourceName:  name,
